@@ -37,3 +37,17 @@ This page allows the user to see & fill out a form as defined by a form spec. Th
 - While we're not restricting the use of additional packages within this project, we've included initial packages that should cover your bases.
 - Code maintainability is key. Think about how this would be extended to support more field types, and feel free to support more if you've got time!
 - We've initialised the project with tailwind, so let [tailwind](https://tailwindui.com/components) be your friend. We're not expecting professional design but we'll be looking out for UX principles and the generally nice look & feel that using tailwind ui components affords you.
+- How a form spec is transferred from the Builder to the Loader is up to you. We only ask that we can see the JSON that both the Builder and Loader output. A few methods for inspiration:
+  - Builder outputs the JSON into a code box that can be copy + pasted into an input box on the Loader page.
+  - Builder passes the data to the Loader via routing (we'll still have to see the Builder output somehow)
+  - Builder saves the form in local storage and the Loader can load it.
+  - Any other method you can think of that solves the problem.
+
+## Initial Packages
+
+- `react-router-dom` - For routing. This also has the peer dependencies:
+  - `localforage` - local storage, feel free to use
+  - `match-sorter`
+  - `sort-by`
+- `formik` - forms
+- `tailwindcss` & co - tailwind
