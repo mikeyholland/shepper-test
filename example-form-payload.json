@@ -1,0 +1,11 @@
+{
+  "name": "Bruce Wayne",
+  "bio": "Don't feel parents are necessary, and I enjoy wealth and solitude.",
+  "star_sign": "Aries",
+  "dairy_allegy": false,
+  "alter_ego": {
+    "name": "Batman",
+    "bio": "I love bats, darkness, and karma.",
+    "secret": null
+  }
+}

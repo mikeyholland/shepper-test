@@ -1,0 +1,67 @@
+[
+  {
+    "name": "name",
+    "required": true,
+    "type": "text",
+    "label": "Your name",
+    "placeholder": "Peter Parker"
+  },
+  {
+    "name": "bio",
+    "required": false,
+    "type": "textarea",
+    "label": "About you",
+    "placeholder": "I love my family, and I'm a bit of a nerd."
+  },
+  {
+    "name": "dairy_allergy",
+    "type": "checkbox",
+    "label": "Are you allergic to dairy?"
+  },
+  {
+    "name": "star_sign",
+    "required": false,
+    "type": "select",
+    "options": [
+      "Aries",
+      "Taurus",
+      "Gemini",
+      "Cancer",
+      "Leo",
+      "Virgo",
+      "Libra",
+      "Scorpio",
+      "Sagittarius",
+      "Capricorn",
+      "Aquarius",
+      "Pisces"
+    ],
+    "placeholder": "Select a Star Sign"
+  },
+  {
+    "name": "alter_ago",
+    "type": "group",
+    "label": "Your alter ego",
+    "children": [
+      {
+        "name": "name",
+        "required": true,
+        "label": "Name",
+        "placeholder": "Spiderman"
+      },
+      {
+        "name": "bio",
+        "required": false,
+        "label": "About your alter ego",
+        "placeholder": "I love spiders, I'm very athletic, and hate green."
+      },
+      {
+        "name": "secret",
+        "required": false,
+        "type": "text",
+        "label": "What's your biggest secret?",
+        "placeholder": "I love gingers"
+      }
+    ]
+  }
+]
