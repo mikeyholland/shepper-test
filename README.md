@@ -14,7 +14,7 @@ We'd recommend you doing this via two pages - a form builder that allows you to 
 
 We've set the project up already with yarn, vite, tailwind (including typography & forms) & typescript. a simple `yarn && yarn dev` should get you up and running. `main.tsx` is your entrypoint, `App.tsx` being the app root.
 
-This is a rather involved test, so we'd recommend giving it 4-6 hours. It's fine to work on it over a couple days we won't be timing you.
+This is a rather involved test, so we'd recommend giving it 4-6 hours. It's fine to work on it over a couple days. We won't be timing you.
 
 ### Form Builder
 
