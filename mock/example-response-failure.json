@@ -1,0 +1,10 @@
+{
+  "error": {
+    "message": "The given data was invalid.",
+    "status": 422,
+    "code": "invalid_input",
+    "fields": {
+      "name": ["The name field is required."]
+    }
+  }
+}
