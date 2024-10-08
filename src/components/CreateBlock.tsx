@@ -149,12 +149,14 @@ export default function CreateBlock({
           value="checkbox"
           onChange={() => onChange('type', 'checkbox')}
         />
-        <RadioButton
-          label="Select"
-          name={uniqueTypeKey}
-          value="select"
-          onChange={handleSelectTypeChange}
-        />
+        {!isChild && (
+          <RadioButton
+            label="Select"
+            name={uniqueTypeKey}
+            value="select"
+            onChange={handleSelectTypeChange}
+          />
+        )}
         {!isChild && (
           <RadioButton
             label="Group"
