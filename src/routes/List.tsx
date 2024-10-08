@@ -19,17 +19,7 @@ export default function List() {
   return (
     <main>
       <h2 className="text-lg mb-4">Forms</h2>
-      {forms.length ? (
-        <ul>
-          {forms.map((form) => (
-            <li key={form.id} className="odd:bg-gray-100">
-              <Link to={`/form-loader/${form.id}`}>
-                <span className="block p-4">{form.name}</span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      ) : (
+      {!forms ? (
         <div className="flex flex-col items-center justify-center py-8">
           <h3 className="mb-4">No forms created yet</h3>
           <Link
@@ -39,6 +29,16 @@ export default function List() {
             Create form
           </Link>
         </div>
+      ) : (
+        <ul>
+          {forms.map((form) => (
+            <li key={form.id} className="odd:bg-gray-100">
+              <Link to={`/form-loader/${form.id}`}>
+                <span className="block p-4">{form.name}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
       )}
     </main>
   );
